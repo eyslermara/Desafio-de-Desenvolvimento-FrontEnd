@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+      
+<title>Desafio FrontEnd</title>
 </head>
 <header>
+    <h1>Formulário para compra de pacote de adesivos</h1>
 </header>
 <body>
-    <h1>hello</h1>
+    <h2>Cores disponíveis</h2>
+    <div class="items">
+     <section>
+        <input type="checkbox" id="color1" name="color1">
+            <label for="color1">Preto</label>
+              <input type="number" id="number-color1">
+        <input type="checkbox" id="color2" name="color2">
+            <label for="color2">Branco</label>
+              <input type="number" id="number-color1">
+        <input type="checkbox" id="color3" name="color3">
+            <label for="color3">Vermelho</label>
+              <input type="number" id="number-color1">
+     </section>
+</div>
+<div class="delivery">
+    <section>
+        <h3>Escolha o melhor dia para entrega</h3>
+            <input type="date" id="date-delivery">
+     <h4>Gostaria de embrulho para presente?</h4>
+          <input type="radio" id="yes">
+            <label for="yes">Sim</label>
+          <input type="radio" id="no">
+             <label for="no">Não</label>
+    </section>
+</div> 
 </body>
+<footer>
+    <div class="additional-information">
+        <section>
+            <h4>Gostaria de adicionar alguma informação?</h4>
+            <input class="text" id="extra">
+        </section>
+    </div>
+</footer>
 </html>
