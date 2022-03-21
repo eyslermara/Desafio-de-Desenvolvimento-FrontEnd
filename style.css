@@ -1,0 +1,70 @@
+:root {
+    -color-brown: #B95C50;
+    -color-orange: #9F2B00;
+    -color-coral: #F28A80;
+    -color-salmon: #FAA590;
+    -color-bege: #FBE5E0;
+    -color-cream: #F9F1F0;
+}
+html {
+     background-color:#F9F1F0;
+     font-family: poppins;
+     color:#B95C50;
+}
+.items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      padding-top: 30px;
+      font-size: 20px;   
+}
+.divider {
+    border: 0.1px solid #F28A80;
+    width: 100%;
+    margin: 20px 0;
+    border-top: 0.1px;
+}
+.delivery {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    justify-items: center;
+
+}
+.additional-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+input[type="number"] {
+color: #9F2B00;
+}
+
+input[type="date"] {
+    color: #9F2B00;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+}
+input[type="text"] {
+    color: #9F2B00;
+}
+
+.date-delivery {
+    display: flex;
+    justify-content: center;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+}
+.additional-information {
+    display: flex;
+    justify-content: center;
+}
