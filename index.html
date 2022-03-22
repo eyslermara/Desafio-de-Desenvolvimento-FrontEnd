@@ -15,20 +15,25 @@
     <h2>Cores disponíveis</h2>
      <section>
        <div class="options">
+        <div class="color">
+         <input class="checkbox" type="checkbox">
             <label for="color1">Preto</label>
-            <div class="number-1">
-            <input placeholder="Quantos adesivos?" min=0 id="total1" type="number" name="number-1"><button onclick="menos()" class="a-1">-</button><button onclick="mais()"  class="b-1">+</button>
           </div>
+          <div class="color">
+          <input class="checkbox" type="checkbox">
             <label for="color2">Branco</label>
-            <div class="number-1">
-            <input placeholder="Quantos adesivos?" min=0 id="total2" type="number" name="number-2"><button onclick="menos()" class="a-2">-</button><button onclick="mais()" class="b-2">+</button>
           </div>
+          <div class="color">
+          <input class="checkbox" type="checkbox">
             <label for="color3">Vermelho</label>
-            <div class="number-1">
-            <input placeholder="Quantos adesivos?" min=0 id="total3"type="number" name="number3"><button onclick="menos()" class="a">-</button><button onclick="mais()" class="b">+</button>
           </div>
-            </div>
-              <div class="divider"></div>         
+            
+            <input placeholder="Quantos pacotes de cada?" min=0 id="total1" type="number" name="number" style="text-align: center">
+            <div class="button">
+            <button onclick="menos()" class="a">-</button><button onclick="mais()" class="b">+</button>
+          </div>
+            <div class="divider"></div>   
+            </div>      
             </section>
 </div>
 
@@ -36,9 +41,9 @@
     <section>
         <h4>Gostaria de embrulho para presente?</h4>
      <div class="package">
-          <input type="radio" id="yes">
+          <input type="radio" name="delivery" id="yes">
             <label for="yes">Sim</label>
-          <input type="radio" id="no">
+          <input type="radio" name="delivery" id="no">
              <label for="no">Não</label>
             </div>
              <div class="divider"></div>    
@@ -51,7 +56,7 @@
             <div class="additional-information">
             <h3>Gostaria de adicionar alguma informação?</h3>
             <input class="text" type="text" id="extra">
-            <button>Enviar</button>
+            <input type="submit" value="Enviar" class="button" id="button" disabled>
         </div>
         </section>
 </footer>

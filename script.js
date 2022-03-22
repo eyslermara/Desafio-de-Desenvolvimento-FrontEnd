@@ -14,7 +14,7 @@ function menos(){
         document.getElementById('total1').value = novo;
     }
 }
-console.log
+
 
 
 

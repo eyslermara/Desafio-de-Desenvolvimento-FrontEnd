@@ -37,7 +37,7 @@ html {
 .package {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:baseline;
 }
 .additional-information {
     display: flex;
@@ -91,6 +91,11 @@ button{
 }
 input::placeholder{
     color: coral;
+    padding-top: 15%;
+}
+.button {
+    display: flex;
+    justify-content: center;
 }
 button.a{
     color: coral;
@@ -137,9 +142,7 @@ h3 {
     display: flex;
     justify-content: center;
 }
-input[type="radio"] {
-    color: coral;
-}
+
 button {
     color: coral;
     box-shadow: 0 0 0 0;
@@ -153,5 +156,84 @@ button {
     border-radius: 5px;
     height: 45px;
     width: 400px;
+}
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color:#fcc8ba;
+}
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: coral;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
 
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:coral;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input.button {
+    outline: none;
+    width: 60px;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    color:#F9F1F0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: coral;
+    transition: all 0.3s;
+    margin-top: 20px;
 }
