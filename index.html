@@ -14,40 +14,34 @@
    <h1>Formulário para compra de pacote de adesivos</h1>
     <h2>Cores disponíveis</h2>
      <section>
-        <input class="checkbox" type="checkbox" id="color1" name="color1">
+       <div class="options">
             <label for="color1">Preto</label>
-              <input class="number-color" type="number" id="number-color1">
-
-
-        <input class="checkbox" type="checkbox" id="color2" name="color2">
+            <div class="number-1">
+            <input placeholder="Quantos adesivos?" min=0 id="total1" type="number" name="number-1"><button onclick="menos()" class="a-1">-</button><button onclick="mais()"  class="b-1">+</button>
+          </div>
             <label for="color2">Branco</label>
-              <input class="number-color" type="number" id="number-color2">
-
-
-        <input class="checkbox" type="checkbox" id="color3" name="color3">
+            <div class="number-1">
+            <input placeholder="Quantos adesivos?" min=0 id="total2" type="number" name="number-2"><button onclick="menos()" class="a-2">-</button><button onclick="mais()" class="b-2">+</button>
+          </div>
             <label for="color3">Vermelho</label>
-              <input class="number-color" type="number" id="number-color3">
-
-
-              <div class="divider"></div>
-           
-     </section>
+            <div class="number-1">
+            <input placeholder="Quantos adesivos?" min=0 id="total3"type="number" name="number3"><button onclick="menos()" class="a">-</button><button onclick="mais()" class="b">+</button>
+          </div>
+            </div>
+              <div class="divider"></div>         
+            </section>
 </div>
+
 <div class="delivery">
     <section>
-        <h3>Escolha o melhor dia para entrega</h3>
-        <div class="date-delivery">
-            <input type="date" id="date-delivery">
-        </div>
         <h4>Gostaria de embrulho para presente?</h4>
-     <div class="date-delivery">
+     <div class="package">
           <input type="radio" id="yes">
             <label for="yes">Sim</label>
           <input type="radio" id="no">
              <label for="no">Não</label>
             </div>
-             <div class="divider"></div>
-            
+             <div class="divider"></div>    
     </section>
 </div> 
 </div>
@@ -55,10 +49,11 @@
 <footer>
         <section>
             <div class="additional-information">
-            <h4>Gostaria de adicionar alguma informação?</h4>
+            <h3>Gostaria de adicionar alguma informação?</h3>
             <input class="text" type="text" id="extra">
-            <input class="button" type="button" id="button">
+            <button>Enviar</button>
         </div>
         </section>
 </footer>
+<script type="text/javascript" src="script.js"></script>
 </html>
